@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-    
+<body class="bg-violet-300 flex flex-1 flex-row justify-center">
+    <!-- basic text -->
+    <h1 class="text-3xl font-bold line-through">
+        Hello world!
+    </h1>
+    <!-- Before extracting a custom class -->
+    <button class="py-2 px-4 bg-red-800 text-white font-thin rounded-sm shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+        Botão com helper classes
+    </button>
+    <!-- After extracting a custom class -->
+    <button class="btn-primary">
+        Button extracting classes with @apply
+    </button>
 </body>
 </html>
